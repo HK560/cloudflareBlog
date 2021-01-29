@@ -516,7 +516,7 @@ async function bloghandle(request) {
 			<div class="row">
 				<div class="col-sm-12">
 				<p>Powered by CloudFlare Workers | Thanks for <a href="https://github.com/kasuganosoras/cloudflare-worker-blog" target="_blank">CloudflareWorkerBlog</a></p>
-				<p>&copy; 2019 ${default_intitle}</p>
+				<p>&copy; 2021 ${default_intitle}</p>
 				<br><br>
 				</div>
 			</div>
