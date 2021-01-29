@@ -11,7 +11,7 @@ var site_favicon	 = "https://cdn.zerodream.net/gitea/img/favicon.png";				// 站
 
 // 博主信息
 var owner_name = "HK560";									// 博主名字
-var owner_logo = "https://s.gravatar.com/avatar/b3a0eb4d30cff86d7a0fce8ace2ad931?s=256/ 博主头像
+var owner_logo = "https://s.gravatar.com/avatar/b3a0eb4d30cff86d7a0fce8ace2ad931?s=256"// 博主头像
 var owner_desc = "新世纪佛系战士";					// 博主简介
 
 // 设置站点资源文件地址
