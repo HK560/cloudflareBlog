@@ -508,7 +508,7 @@ async function bloghandle(request) {
 						<hr>
 						<div class="text-left">
 							<h4>友情链接</h4>
-							<p><a href="https://onedrive.hk560.top/" target="_blank">HK560's Onedrive</a>|<a href="https://proxy.hk560.top/" target="_blank">MyJSProxy</a></p>
+							<p><a href="https://onedrive.hk560.top/" target="_blank">HK560's Onedrive</a> | <a href="https://proxy.hk560.top/" target="_blank">MyJSProxy</a></p>
 						</div>
 					</div>
 				</div>
@@ -528,7 +528,7 @@ async function bloghandle(request) {
 		<script src="${js_showdown_table}" type="text/javascript"></script>
 		<script src="${js_highlight}"></script>
 		<script src="${js_highlight_pack}"></script>
-				<script src="https://comments.zerodream.net/comments.js?s=2"></script>
+		<script src="https://comments.zerodream.net/comments.js?s=2"></script>
 		<script type="text/javascript">
 			var init = {
 			site: "${site_domain}",
