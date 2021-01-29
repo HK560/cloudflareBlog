@@ -7,10 +7,10 @@
  */
 
 // 定义 Github 项目，文章会从这里读取
-const github_base = "kasuganosoras/cloudflare-worker-blog";
+const github_base = "HK560/cloudflareBlog";
 
 // 站点名称
-const site_name = "CloudFlare Workers Blog";
+const site_name = "HK560’s CloudFlare Workers Blog";
 
 // 站点介绍
 const site_desc = "一个用 CloudFlare Worker 搭建的博客";
