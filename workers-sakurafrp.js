@@ -7,26 +7,24 @@ var default_intitle = "elbadaernU";								// 站点名称（显示在首页）
 var default_description = "个人cloudflare博客，随便记录些东西"; 	// 站点简介，有利于 SEO
 var site_domain = "blog.hk560.top";								// 站点域名
 var site_subtitle = "与光同尘";							// 站点副标题
-var site_favicon = "https://cdn.zerodream.net/gitea/img/favicon.png";				// 站点 Logo
+var site_favicon = "https://cdn.jsdelivr.net/gh/HK560/cloudflareBlog@0.1/resource/logp.png";				// 站点 Logo
 
 // 博主信息
 var owner_name = "HK560";									// 博主名字
-var owner_logo = "https://s.gravatar.com/avatar/b3a0eb4d30cff86d7a0fce8ace2ad931?s=256" //博主头像
+var owner_logo = "https://cdn.jsdelivr.net/gh/HK560/cloudflareBlog@0.1/resource/avatar.jpg" //博主头像
 var owner_desc = "新世纪佛系战士";					// 博主简介
 
 // 设置站点资源文件地址
-var css_bootstrap = "https://cdn.zerodream.net/css/bootstrap.min.css";		// Boostrap css 文件地址
-var css_hljs_github = "https://cdn.zerodream.net/css/highlight.js/github.css";  	// Highlight js css 地址
-var js_jquery = "https://cdn.zerodream.net/js/jquery.min.js";		// JQuery 地址
-var js_bootstrap = "https://cdn.zerodream.net/js/bootstrap.min.js";		// Bootstrap 地址
-var js_instantclick = "https://cdn.zerodream.net/js/instantclick.min.js";		// InstantClick 地址
-var js_showdown = "https://cdn.zerodream.net/js/showdown.min.js";			// Showdown 地址
-var js_showdown_table = "https://cdn.zerodream.net/js/showdown-table.min.js";		// Showdown table 地址
-var js_highlight = "https://cdn.zerodream.net/js/highlight.min.js";		// Highlight 地址
-var js_highlight_pack = "https://cdn.zerodream.net/js/highlight.pack.js";		// Highlight pack 地址
+var css_bootstrap = "https://cdn.jsdelivr.net/gh/HK560/cloudflareBlog@0.1/resource/bootstrap.min.css";		// Boostrap css 文件地址
+var css_hljs_github = "https://cdn.jsdelivr.net/gh/HK560/cloudflareBlog@0.1/resource/github.css";  	// Highlight js css 地址
+var js_jquery = "https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js";		// JQuery 地址
+var js_bootstrap = "https://cdn.jsdelivr.net/gh/HK560/cloudflareBlog@0.1/resource/bootstrap.min.js";		// Bootstrap 地址
+var js_instantclick = "https://cdn.jsdelivr.net/gh/HK560/cloudflareBlog@0.1/resource/instantclick.min.js";		// InstantClick 地址
+var js_showdown = "https://cdn.jsdelivr.net/npm/showdown@1.9.1/dist/showdown.min.js";			// Showdown 地址
+var js_showdown_table = "https://cdn.jsdelivr.net/npm/showdown-table@1.0.1/dist/showdown-table.min.js";		// Showdown table 地址
+var js_highlight = "https://cdn.jsdelivr.net/gh/HK560/cloudflareBlog@0.1/resource/highlight.min.js";		// Highlight 地址
+var js_highlight_pack = "https://cdn.jsdelivr.net/gh/HK560/cloudflareBlog@0.1/resource/highlight.pack.js";		// Highlight pack 地址
 
-// 这是一些临时变量，无需修改
-var title = "";
 var intitle = "";
 var title2 = "";
 var description = "";
@@ -75,7 +73,7 @@ var header = `<!DOCTYPE HTML>
 		}
 		
 		code {
-			color: #f4cf5c;
+			color: #00BFFF;
 			background-color: rgba(0,0,0,0.655);
 			border-radius: 0px;
 			border: 1px solid rgba(255,255,255,0.2);
@@ -255,18 +253,10 @@ var header = `<!DOCTYPE HTML>
 			.copyright {
 				text-align: center;
 			}
-		}</style>
-
-
-		<script>
-			var _hmt = _hmt || [];
-			(function() {
-			var hm = document.createElement("script");
-			hm.src = "https://hm.baidu.com/hm.js?b1f3cc985ea87c4141634fa0572a1612";
-			var s = document.getElementsByTagName("script")[0]; 
-			s.parentNode.insertBefore(hm, s);
-			})();
-		</script>
+		}
+        
+        </style>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/HK560/cloudflareBlog@0.2/resource/atom-one-dark.css"/>
 	</head>
 	<body>
 		<div class="container">
@@ -502,12 +492,12 @@ async function bloghandle(request) {
 	data += `</div>
 				<div class="col-sm-3">
 					<div style="padding: 16px;text-align: center;">
-						<img src="${owner_logo}" style="max-width: 220px;width: 100%;border-radius: 50%;">
-						<h3>${owner_name}</h3>
-						<p class="text-left">${owner_desc}</p>
+						<img src="${owner_logo}" style="max-width: 150px;width: 100%;border-radius: 50%;">
+						<h2>${owner_name}</h3>
+						<p class="text-middle">${owner_desc}</p>
 						<hr>
 						<div class="text-left">
-							<h4>友情链接</h4>
+							<h5>友情链接</h4>
 							<p><a href="https://onedrive.hk560.top/" target="_blank">HK560's Onedrive</a> | <a href="https://proxy.hk560.top/" target="_blank">MyJSProxy</a></p>
 						</div>
 					</div>
@@ -528,7 +518,7 @@ async function bloghandle(request) {
 		<script src="${js_showdown_table}" type="text/javascript"></script>
 		<script src="${js_highlight}"></script>
 		<script src="${js_highlight_pack}"></script>
-		<script src="https://comments.zerodream.net/comments.js?s=2"></script>
+				
 		<script type="text/javascript">
 			var init = {
 			site: "${site_domain}",
