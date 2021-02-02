@@ -2,17 +2,17 @@
 const github_base = "HK560/cloudflareBlog";
 
 // 设置站点信息
-var default_title = "elbadaernU - HK560's Blog";					// 站点标题（显示在浏览器标题栏）
-var default_intitle = "elbadaernU";								// 站点名称（显示在首页）
-var default_description = "个人cloudflare博客，随便记录些东西"; 	// 站点简介，有利于 SEO
+var default_title = "unreadablE - HK560's Blog";					// 站点标题（显示在浏览器标题栏）
+var default_intitle = "unreadablE";								// 站点名称（显示在首页）
+var default_description = "个人cloudflare博客，"; 	// 站点简介，有利于 SEO
 var site_domain = "blog.hk560.top";								// 站点域名
-var site_subtitle = "与光同尘";							// 站点副标题
+var site_subtitle = "“总之，这就是一个奇怪的博客”";							// 站点副标题
 var site_favicon = "https://cdn.jsdelivr.net/gh/HK560/cloudflareBlog@0.1/resource/logp.png";				// 站点 Logo
 
 // 博主信息
 var owner_name = "HK560";									// 博主名字
 var owner_logo = "https://cdn.jsdelivr.net/gh/HK560/cloudflareBlog@0.1/resource/avatar.jpg" //博主头像
-var owner_desc = "新世纪佛系战士";					// 博主简介
+var owner_desc = "网络透明人，喜好ACG，重度游戏宅，PC硬件HIFI耳机发烧友，计科专业，新世纪佛系战士";					// 博主简介
 
 // 设置站点资源文件地址
 var css_bootstrap = "https://cdn.jsdelivr.net/gh/HK560/cloudflareBlog@0.1/resource/bootstrap.min.css";		// Boostrap css 文件地址
@@ -43,7 +43,7 @@ var header = `<!DOCTYPE HTML>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=11">
-		<meta name="application-name" content="HK560 Blog">
+		<meta name="application-name" content="HK560 alterBlog">
 		<meta name="msapplication-TileColor" content="#F1F1F1">
 		<link rel="shortcut icon" href="${site_favicon}" />
 		<meta name="description" content="{description}">
@@ -497,7 +497,9 @@ async function bloghandle(request) {
 						<p class="text-middle">${owner_desc}</p>
 						<hr>
 						<div class="text-left">
-							<h5>友情链接</h4>
+							<h5>主博客</h5>
+							<p><a href="http://blog.hk560.top/" target="_blank">elbadaernU</a><p>
+							<h5>其他链接</h5>
 							<p><a href="https://onedrive.hk560.top/" target="_blank">HK560's Onedrive</a> | <a href="https://proxy.hk560.top/" target="_blank">MyJSProxy</a></p>
 						</div>
 					</div>
