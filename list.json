@@ -8,5 +8,15 @@
         "title": "如何添加新文章",
         "time": "2021-01-29",
         "file": "posts/2.md"
+    },
+    {
+        "title": "凯尔希人物说",
+        "time": "2021-02-2",
+        "file": "posts/kaltsit.md"
+    },
+    {
+        "title": "【明日方舟同人文】幕间过往",
+        "time": "2021-02-2",
+        "file": "posts/mujianguowang.md"
     }
 ]
